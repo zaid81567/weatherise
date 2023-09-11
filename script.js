@@ -70,6 +70,8 @@ function getCurrentWeather(location){
     getJson(url)
 }
 
+
+//first search
 getCurrentWeather('kolkata')
 
 
@@ -78,7 +80,7 @@ getCurrentWeather('kolkata')
 // ---------------------event-listeners-------------
 
 document.body.addEventListener('keydown',(e)=>{
-    if(e.key == 'Enter'){
+    if(e.key == 'Enter' || e.key == 'Return'){
         let location = search_bar_el.value
         getCurrentWeather(location)
     }

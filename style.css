@@ -48,6 +48,9 @@
 body{
     height: 100dvh;
     background-color: var(--primary-clr);
+
+    
+    position: relative;
 }
 
 
@@ -97,10 +100,13 @@ iconify-icon:active{
 .main-container{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
 
     font-size: 2.2rem;
     padding-top:2rem;
+
+    /* height: 80dvh; */
 }
 
 
@@ -130,6 +136,8 @@ input{
     outline: none;
     border-top: var(--input-border-size) solid var(--primary-clr) ;
     border-bottom: var(--input-border-size) solid black;
+
+    overflow: hidden;
 }
 
 input:focus{
@@ -150,7 +158,7 @@ input:focus{
 /* ----------------temp-location-data------------------ */
 
 .temp-location-container{
-    margin-top: 1rem;
+    margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -182,6 +190,9 @@ input:focus{
     display: flex;
     width: 100%;
     justify-content: space-around;
+
+    position: absolute;
+    bottom: 50px;
 }
 
 
