@@ -1,5 +1,5 @@
 const api_key = 'a4349d9cec784e9c8ec200021230509'
-const base_url = 'http://api.weatherapi.com/v1/current.json?'
+const base_url = 'https://api.weatherapi.com/v1/current.json?'
 let is_dark_mode = false
 
 
