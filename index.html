@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weatherise</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</head>
+<body >
+    <header>
+        <div class="header-container default-lr-padding">
+            <div class="app-name">Weatherise</div>
+            <div class="dark-mode-toggle"><iconify-icon icon="iconamoon:mode-dark-fill" id="dark-mode-icon"></iconify-icon></div>
+        </div>
+    </header>
+
+    <div class="main-container container default-lr-padding">
+        <div class="location-input">
+            <p>Right now in <input type="text" placeholder="Enter Location" id="search-bar" value="Kolkata"> ,&nbsp;</p>
+            <div class="condition">currently <span class="condition-info">clear</span></div>
+        </div>
+
+        <div class="temp-location-container">
+            <div class="temperature"><span class="degree" id="degree">29</span> &deg;C</div>
+            <div class="location">Kolkata - IN</div>
+        </div>
+
+        <div class="extra-data">
+            <div class="data">
+                <p class="data-number"><span id="feels-like">31</span>&deg;C</p>
+                <p class="data-info">Feels</p>
+            </div>
+            <div class="data">
+                <p class="data-number"><span id="humidity">65</span>%</p>
+                <p class="data-info">Humidity</p>
+            </div>
+            <div class="data">
+                <p class="data-number"><span id="wind-speed">3.03</span> KMH</p>
+                <p class="data-info">Wind</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Fira+Code&family=Poppins&family=Rubik+Mono+One&display=swap&family=Roboto&family=Rubik+Mono+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Code', monospace;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --primary-clr: #f1f1f1;
+    --secondary-clr: #000000;
+
+    --header-dark-mode-clr:#1f1f1f;
+
+    --input-border-size:3px;
+}
+
+
+
+
+
+
+
+
+
+/* ---------------------utilities--------------- */
+
+.container{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.default-lr-padding{
+    padding: 0 1rem;
+}
+
+
+
+
+
+
+
+
+/* -----------------------main----------------------- */
+
+body{
+    height: 100dvh;
+    background-color: var(--primary-clr);
+}
+
+
+
+
+
+
+
+/* ----------------------header---------------------- */
+
+header{
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
+
+.header-container{
+    height: 10dvh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 40px;
+}
+
+.app-name{
+    font-style: italic;
+    
+}
+
+iconify-icon{
+    color: rgb(225, 225, 50);
+    cursor: pointer;
+}
+
+iconify-icon:active{
+    transform: scale(.8);
+}
+
+
+
+
+
+
+
+
+/* ------------------||main-container||----------------- */
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 2.2rem;
+    padding-top:3rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* --------------------location-input------------------ */
+.location-input{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+input{
+    font-size: 2.2rem;
+    font-weight: bold;
+    background-color: var(--primary-clr);
+    padding:0 4px 0 4px;
+    max-width: 260px;
+    border: none;
+    outline: none;
+    border-top: var(--input-border-size) solid var(--primary-clr) ;
+    border-bottom: var(--input-border-size) solid black;
+}
+
+input:focus{
+    border: var(--input-border-size) solid var(--secondary-clr);
+}
+
+.condition{
+    padding-top: .4rem;
+}
+
+
+
+
+
+
+
+
+/* ----------------temp-location-data------------------ */
+
+.temp-location-container{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.degree{
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 150px;
+}
+
+.temperature{
+    font-size: 120px;
+}
+
+.location{
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+/* -------------------extra-data--------------------------- */
+.extra-data{
+    margin-top:4rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+
+.data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.data-number{
+    font-weight: bold;
+    font-size: 2rem;
+    
+}
+
+.data-info{
+    font-size: 1.4rem;
+}
+
+/* ------------------dark-mode------------------- */
+
+html .dark-mode{
+    background-color: var(--header-dark-mode-clr);
+    color: var(--primary-clr);
+    transition: background-color .1s;
+}
+
+html .header-dark-mode{
+    background-color: var(--header-dark-mode-clr);
+    box-shadow: 0 0 20px rgba(224, 222, 222, 0.2);
+}
+
+
+
+
+/* --------------media-queries---------------- */
+
+@media (width < 700px){
+
+    .main-container{
+        font-size: 2rem;
+    }
+
+    .degree{
+        font-size: 180px;
+    }
+    
+    .temperature{
+        font-size: 150px;
+    }
+    
+    .location{
+        font-size: 1.5rem;
+    }
+    
+    .data-number{
+        font-size: 2rem;
+        
+    }
+    
+    .data-info{
+        font-size: 1.2rem;
+    }
+
+    .location-input{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    
+
+
+
+}
+
+
+@media (width < 550px){
+
+    .location-input{
+        justify-content: flex-start;
+    }
+
+    .main-container{
+        font-size: 2rem;
+    }
+
+    .degree{
+        font-size: 135px;
+    }
+    
+    .temperature{
+        font-size: 110px;
+    }
+    
+    .location{
+        font-size: 1.3rem;
+    }
+    
+    .data-number{
+        font-size: 1.6rem;
+        
+    }
+
+}
+
+@media (width < 390px){
+    #search-bar{
+        width: 200px;
+    }
+
+    .degree{
+        font-size: 140px;
+    }
+    
+    .temperature{
+        font-size: 70px;
+    }
+    
+    .location{
+        font-size: 1.2rem;
+    }
+    
+    .data-number{
+        font-weight: bold;
+        font-size: 1.2rem;
+        
+    }
+}
+
+
+
+
+
