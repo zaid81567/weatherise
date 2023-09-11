@@ -82,11 +82,12 @@ header{
 iconify-icon{
     color: rgb(225, 225, 50);
     cursor: pointer;
-    -webkit-tap-highlight-color: none;
+    -webkit-tap-highlight-color: transparent;
+    transition: background-color .1s linear;
 }
 
 iconify-icon:active{
-    transform: scale(.8);
+    transform: scale(.9);
 }
 
 
