@@ -186,13 +186,13 @@ input:focus{
 
 /* -------------------extra-data--------------------------- */
 .extra-data{
-    margin-top:4rem;
+    margin-top:6rem;
     display: flex;
     width: 100%;
     justify-content: space-around;
 
-    position: absolute;
-    bottom: 50px;
+    /* position: absolute;
+    bottom: 50px; */
 }
 
 
@@ -266,7 +266,7 @@ html .header-dark-mode{
     }
     
     .extra-data{
-        margin-top: 2rem;
+        margin-top: 4rem;
     }
 
 
