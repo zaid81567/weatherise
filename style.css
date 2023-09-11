@@ -100,7 +100,7 @@ iconify-icon:active{
     align-items: center;
 
     font-size: 2.2rem;
-    padding-top:3rem;
+    padding-top:2rem;
 }
 
 
@@ -150,7 +150,7 @@ input:focus{
 /* ----------------temp-location-data------------------ */
 
 .temp-location-container{
-    margin-top: 2rem;
+    margin-top: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -254,6 +254,9 @@ html .header-dark-mode{
         
     }
     
+    .extra-data{
+        margin-top: 2rem;
+    }
 
 
 
